@@ -7,7 +7,7 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.image('"https://raw.githubusercontent.com/hadDream7652/test_anova2/main/projet_final3/files/logo_ensae.jpg"', caption='Ecole nationale de la Statistique et de l\'Analyse économique', clamp=False, channels="RGB", output_format="auto")
+st.image('https://raw.githubusercontent.com/hadDream7652/test_anova2/main/projet_final3/files/logo_ensae.jpg', caption='Ecole nationale de la Statistique et de l\'Analyse économique', clamp=False, channels="RGB", output_format="auto")
 st.snow()
 st.sidebar.success("Présentation")
 st.write("# **__Welcome to the app of DIOP Papa Boubacar and OUEDRAOGO Faïçal Cheick Hamed__**")
