@@ -254,9 +254,9 @@ if 'data' in st.session_state:
                                     subtab2.write(f"La statistique est: **{row['F']}**")
                                     subtab2.write(f"La p-value est : **{p_value}**.")  # Affichez seulement la première valeur de p-value
                                     if p_value < st.session_state.signific and row['F']>0:
-                                        subtab2.write(f"Le facteur {index} a un effet significatif sur {st.session_state.variable_dependante}. Donc il y a une **synergie** entre {st.session_state.facteur1} et {st.session_state.facteur2}.")
+                                        subtab2.write(f"Le facteur {index} a un effet significatif positif sur {st.session_state.variable_dependante}. Donc il y a une **synergie** entre {st.session_state.facteur1} et {st.session_state.facteur2}.")
                                     elif p_value < st.session_state.signific and row['F']<0:
-                                        subtab2.write(f"Le facteur {index} a un effet significatif sur {st.session_state.variable_dependante}. Donc, {st.session_state.facteur1} et {st.session_state.facteur2} sont **antagonistes**.")
+                                        subtab2.write(f"Le facteur {index} a un effet significatif négatif sur {st.session_state.variable_dependante}. Donc, {st.session_state.facteur1} et {st.session_state.facteur2} sont **antagonistes**.")
                                     else:
                                         subtab2.write(f"Le facteur {index} n'a pas d'effet significatif sur {st.session_state.variable_dependante}.")
                                     break                 # ComparaisonMultiple Comparisons using Tukey's HSD
