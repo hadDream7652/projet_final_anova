@@ -24,7 +24,7 @@ else:
     uploaded = st.session_state.get('uploaded', None)
 if st.button("Charger la base par défaut"):
     st.session_state.clear()
-    st.session_state.uploaded = "https://github.com/hadDream7652/test_anova2/blob/main/projet_final3/files/Base_test.dta"
+    st.session_state.uploaded = "https://raw.githubusercontent.com/hadDream7652/test_anova2/main/projet_final3/files/Base_test.dta"
     st.session_state.data = pd.read_stata(st.session_state.uploaded)
 
 
